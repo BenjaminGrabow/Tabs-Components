@@ -28,7 +28,7 @@ class TabLink {
     // this.element;
     this.element.classList.add("tabs-link-selected");
     // Call the select method on the item associated with this link
-    this.tabItem.select();
+    this.tabItem.select(); 
   }
 }
 
@@ -61,4 +61,4 @@ class TabItem {
 
 */
 
-links = document.querySelectorAll(".tabs-link").forEach( link => new TabLink(link));
+const links = document.querySelectorAll(".tabs-link").forEach( link => new TabLink(link));
